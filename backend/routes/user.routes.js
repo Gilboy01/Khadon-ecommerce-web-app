@@ -50,7 +50,7 @@ router.post("/register", async (req, res) => {
 });
 
 // Login Route | POST /api/users/login
-// @desc Authentication user
+// @desc user Authentication
 // @access public
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
