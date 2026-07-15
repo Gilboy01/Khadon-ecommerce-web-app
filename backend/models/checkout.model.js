@@ -8,7 +8,7 @@ const checkoutItemsSchema = new mongoose.Schema(
       required: true,
     },
     name: {
-      type: string,
+      type: String,
       required: true,
     },
     image: {
