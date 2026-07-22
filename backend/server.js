@@ -18,7 +18,13 @@ const app = express();
 //middleware for app to work with json data
 app.use(express.json());
 // To communicate with react server
-app.use(cors());
+app.use(
+  cors(),
+  //{
+  // origin: "http://localhost:5173",
+  // credentials: true,
+  // }
+);
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
